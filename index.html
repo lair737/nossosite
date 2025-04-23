@@ -1,68 +1,239 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Lair/Andrade</title>
-  <link rel="stylesheet" href="style.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 20px 30px;
+      background: rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      padding: 12px 25px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background: #ffcc00;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #e6b800;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 50px 20px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .feature {
+      text-align: center;
+      max-width: 280px;
+      flex: 1 1 250px;
+    }
+
+    .feature h3 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 16px;
+    }
+
+    .intro {
+      padding: 60px 20px;
+      background: #121212;
+      text-align: center;
+    }
+
+    .intro h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    .intro p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .intro-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .intro-gallery img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .intro-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    footer p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+
+    /* Correções específicas para telas pequenas */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .intro-gallery img {
+        max-width: 90vw;
+        aspect-ratio: 16 / 9;
+      }
+
+      .intro-gallery {
+        justify-content: center;
+        gap: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Venha explorar um mundo tecnológico com a RO$$/LAIR</h1>
+    <h1>Meu Site</h1>
     <nav>
       <ul>
-        <li><a href="#home">Início</a></li>
-        <li><a href="#features">Futuro</a></li>
-        <li><a href="#contact">Suporte</a></li>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#futuro">Futuro</a></li>
+        <li><a href="#suporte">Suporte</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <h2>Seja bem-vindo(a) ao nosso website</h2>
-    <p>Explore uma experiência única e envolvente.</p>
-    <button id="startBtn">Comece agora</button>
+  <section class="hero" id="inicio">
+    <h2>Bem-vindo ao Nosso Site</h2>
+    <p>Explore nossos recursos e descubra mais.</p>
+    <button>Saiba Mais</button>
   </section>
 
-  <section class="features" id="features">
+  <section class="features" id="futuro">
     <div class="feature">
-      <h3>Design Elegante</h3>
-      <p>Descubra o poder da simplicidade e elegância na formação em cibersegurança e programação.</p>
+      <h3>Recurso 1</h3>
+      <p>Descrição do recurso 1.</p>
     </div>
     <div class="feature">
-      <h3>Tecnologia Moderna</h3>
-      <p>Integração perfeita com tecnologias modernas e inovadoras.</p>
+      <h3>Recurso 2</h3>
+      <p>Descrição do recurso 2.</p>
     </div>
     <div class="feature">
-      <h3>Alta Performance</h3>
-      <p>Desempenho e confiabilidade incomparáveis.</p>
+      <h3>Recurso 3</h3>
+      <p>Descrição do recurso 3.</p>
     </div>
   </section>
 
-  <section id="intro" class="intro">
-    <h2>Bem-vindo ao Mundo Tecnológico da RO$$/LAIR</h2>
-    <p>
-      Nosso projeto visa transformar a maneira como jovens se conectam à tecnologia.
-      Desde montagem e otimização de computadores, até aulas práticas de cibersegurança e programação.
-    </p>
-    
+  <section class="intro" id="suporte">
+    <h2>Galeria de Imagens</h2>
+    <p>Confira algumas de nossas imagens destacadas.</p>
     <div class="intro-gallery">
-        <img src="img/pexels-divinetechygirl-1181675.jpg" alt="Meu PC">
-        <img src="img/pexels-goumbik-574071.jpg" alt="Programando em casa">
-      </div>
-      
-       
+      <img src="imagem1.jpg" alt="Imagem 1">
+      <img src="imagem2.jpg" alt="Imagem 2">
+      <img src="imagem3.jpg" alt="Imagem 3">
+    </div>
   </section>
 
-  <footer id="contact">
-    <p>Assistência tecnológica inovadora, fornecendo acesso fácil e navegação evolutiva</p>
-    <p>Para o caso de uma adesão, por favor entre em contacto com o nosso suporte</p>
-    <p>Gmail: laurindoucuma5@gmail.com</p>
-    <p>Telefone: 928319344 / 936244481</p>
-    <p>&copy; 2025 Incredible Design. Todos os direitos reservados.</p>
+  <footer>
+    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
-</body>
-</html>
+
+::contentReference[oaicite:0]{index=0}
+ 
