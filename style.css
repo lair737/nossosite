@@ -136,15 +136,7 @@ nav ul li a:hover {
   padding: 20px;
 }
 
-.intro-gallery img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease;
-}
+/* ... todo o seu código anterior ... */
 
 /* Correção específica para telas pequenas */
 @media (max-width: 600px) {
@@ -157,6 +149,17 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
   }
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+footer p {
+  font-size: 14px;
+  font-weight: 300;
 }
 
 
