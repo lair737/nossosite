@@ -13,8 +13,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 30px;
+  padding: 20px 50px;
   background: rgba(0, 0, 0, 0.5);
   position: sticky;
   top: 0;
@@ -32,7 +31,6 @@ nav ul {
   gap: 20px;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
 }
 
 nav ul li a {
@@ -47,11 +45,11 @@ nav ul li a:hover {
 
 .hero {
   text-align: center;
-  padding: 80px 20px;
+  padding: 100px 20px;
 }
 
 .hero h2 {
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
 }
@@ -59,11 +57,11 @@ nav ul li a:hover {
 .hero p {
   font-size: 18px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .hero button {
-  padding: 12px 25px;
+  padding: 15px 30px;
   font-size: 16px;
   font-weight: 600;
   color: #fff;
@@ -80,26 +78,26 @@ nav ul li a:hover {
 
 .features {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 40px;
   padding: 50px 20px;
   background: rgba(0, 0, 0, 0.3);
 }
 
 .feature {
   text-align: center;
-  max-width: 280px;
-  flex: 1 1 250px;
+  max-width: 300px;
 }
 
 .feature h3 {
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
 .feature p {
   font-size: 16px;
+  font-weight: 300;
 }
 
 .intro {
@@ -109,7 +107,7 @@ nav ul li a:hover {
 }
 
 .intro h2 {
-  font-size: 36px;
+  font-size: 42px;
   margin-bottom: 20px;
   color: #ffcc00;
 }
@@ -120,53 +118,26 @@ nav ul li a:hover {
   margin: 0 auto 40px;
   line-height: 1.6;
 }
-  
-  
-/* ... todo o seu código anterior ... */
 
-/* Correção específica para telas pequenas */
-@media (max-width: 600px) {
-  .intro-gallery img {
-    max-width: 90vw;
-    aspect-ratio: 16 / 9;
-  }
-
-  .intro-gallery {
-    justify-content: center;
-    gap: 20px;
-  }
+.intro-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+.intro-gallery img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
 }
-
-footer p {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-footer p {
-  font-size: 14px;
-  font-weight: 300;
-}
-
 
 .intro-gallery img:hover {
   transform: scale(1.05);
 }
 
-footer {  
+footer {
   text-align: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.5);
