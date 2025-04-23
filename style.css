@@ -120,20 +120,22 @@ nav ul li a:hover {
   margin: 0 auto 40px;
   line-height: 1.6;
 }
-
-/* ... todo o seu código anterior ... */
-
-/* Correção específica para telas pequenas */
-@media (max-width: 600px) {
-  .intro-gallery img {
-    max-width: 90vw;
-    aspect-ratio: 16 / 9;
+    .intro-gallery img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
   }
 
-  .intro-gallery {
-    justify-content: center;
-    gap: 20px;
-  }
+  @media (max-width: 600px) {
+    .intro-gallery img {
+      max-width: 90vw;
+      aspect-ratio: 16 / 9;
+    }
+  
+
 }
 
 footer {
@@ -152,7 +154,7 @@ footer p {
   transform: scale(1.05);
 }
 
-footer {
+footer {  
   text-align: center;
   padding: 20px;
   background: rgba(0, 0, 0, 0.5);
