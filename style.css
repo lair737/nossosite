@@ -125,18 +125,19 @@ nav ul li a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-}
-
-.intro-gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   gap: 30px;
   padding: 20px;
 }
 
-/* ... todo o seu código anterior ... */
+.intro-gallery img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
 
 /* Correção específica para telas pequenas */
 @media (max-width: 600px) {
@@ -149,24 +150,11 @@ nav ul li a:hover {
     justify-content: center;
     gap: 20px;
   }
+
+
+
+
 }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-footer p {
-  font-size: 14px;
-  font-weight: 300;
-}
-
-
-.intro-gallery img:hover {
-  transform: scale(1.05);
-}
-
 footer {
   text-align: center;
   padding: 20px;
