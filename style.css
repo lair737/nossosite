@@ -128,13 +128,37 @@ nav ul li a:hover {
   gap: 20px;
 }
 
+.intro-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+}
+
 .intro-gallery img {
   width: 100%;
   max-width: 300px;
+  height: auto;
+  object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.6);
   transition: transform 0.3s ease;
 }
+
+/* Correção específica para telas pequenas */
+@media (max-width: 600px) {
+  .intro-gallery img {
+    max-width: 90vw;
+    aspect-ratio: 16 / 9;
+  }
+
+  .intro-gallery {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
 
 .intro-gallery img:hover {
   transform: scale(1.05);
