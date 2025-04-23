@@ -1,147 +1,16 @@
+/* ... todo o seu código anterior ... */
 
-html {
-  scroll-behavior: smooth;
-}
+/* Correção específica para telas pequenas */
+@media (max-width: 600px) {
+  .intro-gallery img {
+    max-width: 90vw;
+    aspect-ratio: 16 / 9;
+  }
 
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
-  color: #fff;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 30px;
-  background: rgba(0, 0, 0, 0.5);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-header h1 {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  flex-wrap: wrap;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-nav ul li a:hover {
-  color: #ffcc00;
-}
-
-.hero {
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero h2 {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 30px;
-}
-
-.hero button {
-  padding: 12px 25px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  background: #ffcc00;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.hero button:hover {
-  background: #e6b800;
-}
-
-.features {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  padding: 50px 20px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.feature {
-  text-align: center;
-  max-width: 280px;
-  flex: 1 1 250px;
-}
-
-.feature h3 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.feature p {
-  font-size: 16px;
-}
-
-.intro {
-  padding: 60px 20px;
-  background: #121212;
-  text-align: center;
-}
-
-.intro h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #ffcc00;
-}
-
-.intro p {
-  font-size: 18px;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
-}
-
-.intro-gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.intro-gallery img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease;
-}
-
-.intro-gallery img:hover {
-  transform: scale(1.05);
+  .intro-gallery {
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 footer {
